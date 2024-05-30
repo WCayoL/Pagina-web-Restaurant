@@ -110,10 +110,45 @@ body {
 }
 
 
-/* Responsivo */
-@media (min-width: 992px) {
+#collapse-nav a{
+  font-size: 1.2em;
+}
+
+#collapse-nav a span{
+  font-size: 1em;
+}
+
+
+/* Extra grande (>=1200px) */
+@media (min-width: 1200px) {
+  #main-content .jumbotron-custom {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Grande (>=992px y <1200px) */
+@media (min-width: 992px) and (max-width: 1199px) {
   #phone .nav-link {
     display: flex;
     align-items: center;
+  }
+  #main-content .jumbotron-custom {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Mediano y pequeño (<768px) */
+@media (max-width: 991px) {
+  #main-content .jumbotron-custom {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+    background-size: cover;
+    background-position: center;
   }
 }
