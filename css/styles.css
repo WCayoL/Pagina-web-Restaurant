@@ -2,23 +2,20 @@ body {
   font-size: 16px;
   color: #fff;
   background-color: #61122f;
-  font-family: oxygen-regular;
+  font-family: "Oxygen", sans-serif;
 }
 
 .oxygen-light {
-  font-family: "Oxygen", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
 .oxygen-regular {
-  font-family: "Oxygen", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .oxygen-bold {
-  font-family: "Oxygen", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -87,11 +84,13 @@ body {
 
 #phone {
   margin-top: 5px;
+  white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
 }
 
 #phone a { /* Phone number */
   text-align: right;
   padding-bottom: 0;
+  font-size: 1.25rem; /* Ajusta el tamaño de la fuente según sea necesario */
 }
 
 #phone div { /* We Deliver */
@@ -100,11 +99,21 @@ body {
   padding-right: 15px;
 }
 
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
+
+.navbar-toggler {
+  border: 3px solid #61122f;
+  clear: both;
 }
 
-.navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(97, 18, 47, 1)" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+
+/* Responsivo */
+@media (min-width: 992px) {
+  #phone .nav-link {
+    display: flex;
+    align-items: center;
+  }
 }
