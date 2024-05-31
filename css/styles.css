@@ -126,6 +126,8 @@ body {
     height: 675px;
     background-size: cover;
     background-position: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 }
 
@@ -140,15 +142,39 @@ body {
     height: 558px;
     background-size: cover;
     background-position: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 }
 
 /* Mediano y pequeño (<768px) */
-@media (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   #main-content .jumbotron-custom {
     background: url('../images/jumbotron_768.jpg') no-repeat;
-    height: 432px;
+    height: 380px;
     background-size: cover;
     background-position: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  #main-content .jumbotron-custom {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 575px) {
+  #main-content .jumbotron-custom {
+    background-size: cover;
+    background-position: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 }
