@@ -259,6 +259,7 @@ body {
     margin-top: 25px;
     margin-bottom: 25px;
   }
+  
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -280,6 +281,21 @@ body {
     margin-top: 25px;
     margin-bottom: 25px;
   }
+  /* Footer */
+  #hours, #address, #testimonials {
+    margin-bottom: 30px;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  .panel-footer .container-fluid .container .row section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer .container-fluid .container .row section hr {
+    width: 50%;
+    margin: 0 auto; 
+  }
+  /* End Footer */
 }
 
 @media (max-width: 575px) {
@@ -311,6 +327,10 @@ body {
     background-position: center;
     margin-top: 25px;
     margin-bottom: 25px;
+  }
+  #hours, #address, #testimonials {
+    margin-bottom: 30px;
+    text-align: center;
   }
 }
 
