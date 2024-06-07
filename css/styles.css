@@ -159,6 +159,12 @@ body {
   opacity: .8;
 }
 
+.nav-link.btn-primary.active,
+.nav-link.btn-primary:focus,
+.nav-link.btn-primary:hover {
+  background-color: #fff; 
+  border-radius: 0;
+}
 
 /* Página de menus */
 #menu-categories-title{
