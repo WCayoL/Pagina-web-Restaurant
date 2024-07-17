@@ -56,6 +56,21 @@ $(function () {
     );
   });*/
 
+  var switchMenuToActive = function () {
+    // Remove 'active' from home button
+    var homeButton = document.querySelector("#navHomeButton a");
+    if (homeButton) {
+      homeButton.classList.remove("active");
+    }
+  
+    // Add 'active' to menu button if not already there
+    var menuButton = document.querySelector("#navMenuButton a");
+    if (menuButton && !menuButton.classList.contains("active")) {
+      menuButton.classList.add("active");
+    }
+  };
+  
+  
   // On page load (before images or CSS)
 document.addEventListener("DOMContentLoaded", function (event) {
   showLoading("#main-content");
@@ -118,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         $ajaxUtils.sendGetRequest(
           categoryHtml,
           function (categoryHtml) {
+            switchMenuToActive();
             var categoriesViewHtml = buildCategoriesViewHtml(
               categories,
               categoriesTitleHtml,
@@ -166,6 +182,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       $ajaxUtils.sendGetRequest(
         menuItemHtml,
         function (menuItemHtml) {
+          switchMenuToActive();
           var menuItemsViewHtml = buildMenuItemsViewHtml(
             categoryMenuItems,
             menuItemsTitleHtml,
