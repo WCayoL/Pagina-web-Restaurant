@@ -43,19 +43,6 @@ $(function () {
     return string;
   };
 
-  // On page load (before images or CSS)
-  /*document.addEventListener("DOMContentLoaded", function (event) {
-    // On first load, show home view
-    showLoading("#main-content");
-    $ajaxUtils.sendGetRequest(
-      homeHtml,
-      function (responseText) {
-        document.querySelector("#main-content").innerHTML = responseText;
-      },
-      false
-    );
-  });*/
-
   var switchMenuToActive = function () {
     // Remove 'active' from home button
     var homeButton = document.querySelector("#navHomeButton a");
